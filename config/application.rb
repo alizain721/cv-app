@@ -17,3 +17,9 @@ module CvApp
     # the framework and any gems in your application.
   end
 end
+
+module RailsPdf
+  class Application < Rails::Application
+      config.middleware.use PDFKit::Middleware
+  end
+end

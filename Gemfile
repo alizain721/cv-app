@@ -41,6 +41,11 @@ gem 'devise'
 gem 'bootstrap'
 gem 'jquery-rails'
 
+#Gem for cv generation
+gem 'prawn'
+gem 'pdfkit'
+gem "wkhtmltopdf-binary"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

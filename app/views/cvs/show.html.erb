@@ -18,4 +18,8 @@
     <strong>Skills:</strong>
     <%= @cv.skills %>
   </p>
+
+  <p>
+    <%= link_to 'Download Report', cv_path(@cv,format: 'pdf') %>
+  </p>
 </div>
