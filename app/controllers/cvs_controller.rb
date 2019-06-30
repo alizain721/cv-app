@@ -1,4 +1,5 @@
-class CVsController < ApplicationController
+class CvsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_cv, only: [:show, :edit, :update, :destroy]
 
   # GET /cvs
@@ -24,7 +25,8 @@ class CVsController < ApplicationController
   # POST /cvs
   # POST /cvs.json
   def create
-    @cv = Cv.new(cv_params)
+
+    @cv = current_user.cvs.build(cv_params)
 
     respond_to do |format|
       if @cv.save
