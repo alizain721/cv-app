@@ -15,8 +15,8 @@
   <tbody>
     <% @cvs.each do |cv| %>
       <tr>
-        <td><%= cv.education %></td>
-        <td><%= cv.experience %></td>
+        <td><%= raw(cv.education) %></td>
+        <td><%= raw(cv.experience) %></td>
         <td><%= cv.skills %></td>
         <td><%= link_to 'Show', cv %></td>
         <td><%= link_to 'Edit', edit_cv_path(cv) %></td>

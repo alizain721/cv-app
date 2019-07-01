@@ -4,8 +4,7 @@
   <div class="span3 well">
     <center>
       <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
-      <h3>Joe Sixpack</h3>
-        <em>click my face for more</em>
+      <h3><%= current_user.full_name %></h3>
     </center>
   </div>
   <p id="notice"><%= notice %></p>
@@ -15,12 +14,12 @@
     <%= current_user.email %>
   <p>
     <strong>Education:</strong>
-    <%= @cv.education %>
+    <%= raw(@cv.education) %>
   </p>
 
   <p>
     <strong>Experience:</strong>
-    <%= @cv.experience %>
+    <%= raw(@cv.experience) %>
   </p>
 
   <p>

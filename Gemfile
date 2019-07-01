@@ -47,7 +47,10 @@ gem 'pdfkit'
 gem "wkhtmltopdf-binary"
 
 #For cv editing
-gem 'ckeditor'
+gem 'ckeditor', '4.1.3'
+
+#For pictures
+gem 'paperclip'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
