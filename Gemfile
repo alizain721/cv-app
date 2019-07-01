@@ -45,7 +45,7 @@ gem 'pdfkit'
 gem "wkhtmltopdf-binary"
 
 #For cv editing
-gem 'ckeditor', '4.1.3'
+# gem 'ckeditor', '4.1.3'
 
 #For pictures
 gem 'paperclip'
